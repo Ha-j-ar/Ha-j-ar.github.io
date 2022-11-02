@@ -800,10 +800,16 @@ Banner Style
   height: 100%;
   box-sizing: border-box;
 }
-#section-1 .content-slider .slider .banner .banner-inner-wrapper .main-caption {
+#section-1 .content-slider .slider .banner .banner-inner-wrapper .main-caption1 {
   position: absolute;
   width: 100%;
   top: 40%;
+  transform: translateY(-50%);
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper .main-caption {
+  position: absolute;
+  width: 100%;
+  top: 60%;
   transform: translateY(-50%);
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
@@ -824,20 +830,23 @@ Banner Style
   transition: 0.3s;
 }
 #section-1 .content-slider .slider #top-banner-1 {
-  background: url('../images/aiesec ai.png') no-repeat center center;
+  background: url('../images/MC/IMG_8851.jpg') no-repeat center center;
   background-size: cover;
+
 }
 #section-1 .content-slider .slider #top-banner-2 {
-  background: url('../images/Website11.png') no-repeat center center;
+  background: url('../images/MC/_MG_5869.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-3 {
-  background: url('../images/AK3.png') no-repeat center center;
+  background: url('../images/aiesec ai.png') no-repeat center center;
   background-size: cover;
+
 }
 #section-1 .content-slider .slider #top-banner-4 {
   background: url('../images/image.png') no-repeat center center;
   background-size: cover;
+
 }
 #section-1 .content-slider nav {
   position: absolute;
@@ -1152,7 +1161,6 @@ About Page Style
   background-size: cover;
   background-position: center center;
   padding: 130px 0px 200px 0px;
-  filter: hue-rotate(289deg);
 }
 
 .blur-bg {
@@ -1259,7 +1267,10 @@ About Page Style
   font-size: 20px;
   color: #fff;
 }
-
+.cities-town .slider-content .item .thumb img{
+  width: 232.5px;
+  height: 174.38px;
+}
 .cities-town .owl-nav {
   position: absolute;
   top: -60px;
@@ -1293,7 +1304,7 @@ About Page Style
 
 .cities-town .owl-nav .owl-prev:hover::after,
 .cities-town .owl-nav .owl-next:hover::after {
-  color: #22b3c1;
+  color: #331875;
 }
 
 .weekly-offers {
@@ -2324,6 +2335,10 @@ body {
     margin-right: 0px;
     margin-bottom: 60px;
   }
+  .Faqs .right-image {
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
   .search-form #search-form h4 {
     margin-bottom: 15px;
   }
@@ -2562,6 +2577,7 @@ body {
   width:125px;
   display:flex;
   justify-content:space-between;
+  color: #331875;
 }
 /* .name{
   font-size:25px;
@@ -2922,12 +2938,12 @@ body {
 .how-it-works.row .col-2 {
   align-self: stretch;
 }
-.how-it-works.row .col-2::after {
+/* .how-it-works.row .col-2::after {
   /* content: "";
   position: absolute;
   border-left: 3px solid #ED8D8D;
-  z-index: 1; */
-}
+  z-index: 1; 
+} */
 .how-it-works.row .col-2.bottom::after {
   height: 50%;
   left: 50%;
@@ -3195,8 +3211,103 @@ border-top-right-radius: 20px;
 } */
 
 
+/******************Values Icons Css******************/
+
+.valueIcon{
+  display: -webkit-inline-box;
+
+}
+.valueIcon img{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/**************FAQS****************/
 
 
 
+/* body {
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0;
+} */
 
+.Faqs .wrapper {
+  /* width: ; */
+  /* margin-left: 10%; */
+  align-items: center;
+}
 
+.Faqs h1 {
+  margin-bottom: 20px;
+}
+
+.Faqs .containerQ {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+  margin: 20px 0;
+}
+
+.Faqs .question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Faqs .question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+}
+
+.Faqs .question.active::after {
+  transform: rotate(45deg);
+}
+
+.Faqs .answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.Faqs .answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+}
+
+/* .question.active + .answercont {
+} */
+
+@media screen and (max-width: 790px){
+  .Faqs html {
+    font-size: 14px;
+  }
+  .Faqs .wrapper {
+  width: 100%;
+}
+}
+
+.Faqs .right-image img{
+ /* margin-left: 50px; */
+width: 80%;
+}
+.Faqs .right-image img{
+  border-radius: 23px;
+}
+.rowQ{
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap:wrap;
+}
